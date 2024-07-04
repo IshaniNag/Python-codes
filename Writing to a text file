@@ -1,0 +1,18 @@
+# Write a specific message to a text file in a single line
+def write_single_line(filename, message):
+    with open(filename, 'w') as file:
+        file.write(message)
+# Write a specific message to a text file in multiple lines
+def write_multiple_lines(filename, message):
+    with open(filename, 'w') as file:
+        file.write('\n'.join(message))
+# Create and write to a text file in a single line
+write_single_line('message_single_line.txt', 'This is a specific message written in a single line.')
+# Create and write to a text file in multiple lines
+message_multiple_lines = [
+    'This is a specific message written',
+    'in multiple lines.',
+    'Each line represents a new sentence.'
+]
+write_multiple_lines('message_multiple_lines.txt', message_multiple_lines)
+print("Messages have been written to text files successfully.")
