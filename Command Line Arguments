@@ -1,0 +1,10 @@
+import sys
+def main():
+    # Get command-line arguments
+    arguments = sys.argv[1:]  # Exclude the script name, which is the first argument
+
+    # Print the number of arguments
+    num_arguments = len(arguments)
+    print("Number of command-line arguments:", num_arguments)
+if __name__ == "__main__":
+main()
