@@ -1,0 +1,63 @@
+import numpy as np
+
+# Creating a one-dimensional NumPy array
+arr1d = np.array([1, 2, 3, 4, 5])
+
+# Printing the array
+print("One-dimensional array:")
+print(arr1d)
+
+# Accessing elements
+print("First element:", arr1d[0])
+print("Last element:", arr1d[-1])
+
+# Slicing
+print("Sliced array:", arr1d[1:4])
+
+# Changing an element
+arr1d[2] = 10
+print("Array after modifying element:", arr1d)
+
+# Appending elements
+arr1d = np.append(arr1d, 6)
+print("Array after appending element:", arr1d)
+
+# Deleting elements
+arr1d = np.delete(arr1d, 2)
+print("Array after deleting element at index 2:", arr1d)
+# Creating a two-dimensional NumPy array
+arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Printing the array
+print("\nTwo-dimensional array:")
+print(arr2d)
+
+# Accessing elements
+print("Element at row 1, column 1:", arr2d[0, 0])
+print("Element at row 2, column 3:", arr2d[1, 2])
+
+# Slicing rows and columns
+print("Second row:", arr2d[1, :])
+print("Second column:", arr2d[:, 1])
+
+# Changing an element
+arr2d[1, 1] = 10
+print("Array after modifying element at row 2, column 2:", arr2d)
+
+# Appending a row
+new_row = np.array([10, 11, 12])
+arr2d = np.vstack((arr2d, new_row))
+print("Array after appending a row:", arr2d)
+
+# Appending a column
+new_col = np.array([0, 0, 0, 0])
+arr2d = np.column_stack((arr2d, new_col))
+print("Array after appending a column:", arr2d)
+
+# Deleting a row
+arr2d = np.delete(arr2d, 1, axis=0)
+print("Array after deleting row 1:", arr2d)
+
+# Deleting a column
+arr2d = np.delete(arr2d, 1, axis=1)
+print("Array after deleting column 1:", arr2d)
