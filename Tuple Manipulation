@@ -1,0 +1,41 @@
+def main():
+    # Creating a tuple
+    fruits = ("apple", "banana", "orange", "grape", "pineapple")
+
+    # Accessing elements of a tuple
+    print("Fruits:", fruits)
+    print("First fruit:", fruits[0])
+    print("Last fruit:", fruits[-1])
+
+    # Iterating over a tuple
+    print("\nIterating over the tuple:")
+    for fruit in fruits:
+        print(fruit)
+
+    # Concatenating tuples
+    more_fruits = ("mango", "papaya")
+    all_fruits = fruits + more_fruits
+    print("\nAll fruits:", all_fruits)
+
+    # Slicing a tuple
+    print("\nSliced tuple:", all_fruits[2:5])
+
+    # Finding the index of an element
+    print("\nIndex of 'orange':", all_fruits.index("orange"))
+
+    # Counting occurrences of an element
+    print("Occurrences of 'apple':", all_fruits.count("apple"))
+
+    # Tuple unpacking
+    print("\nTuple unpacking:")
+    a, b, c, d, e, f, g = all_fruits
+    print("a:", a)
+    print("b:", b)
+    print("c:", c)
+    print("d:", d)
+    print("e:", e)
+    print("f:", f)
+    print("g:", g)
+
+if __name__ == "__main__":
+    main()
